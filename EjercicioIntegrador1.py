@@ -1,3 +1,4 @@
+# https://github.com/anovaz24/Ejercicios-23316.git
 # Ejercicio 1
 # MCD
 def maximo_comun_divisor(numero1,numero2):
