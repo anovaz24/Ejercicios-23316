@@ -108,24 +108,24 @@ class Persona:
     @nombre.setter
     def nombre(self,valor):
         if type(valor) != str:
-            raise ValueError
+            raise ValueError ("Debe ser un nombre")
         self.__nombre = valor
 
     @edad.setter
     def edad(self,valor):
         if type(valor) != int:
-            raise ValueError
+            raise ValueError("La edad debe ser un entero")
         elif valor < 0 or valor > 120:
-            raise ValueError
+            raise ValueError("La edad no puede ser negativa o mayor a 120 años")
         self.__edad = valor
 
     @dni.setter
     def dni(self,valor):
         try:
             if type(valor) != int:
-                raise ValueError
+                raise ValueError("El DNI debe ser un número entero")
             elif valor < 100000 or valor > 99999999:
-                raise ValueError
+                raise ValueError("El DNI debe ser un número entre 100000 y 99999999")
             else:
                 self.__dni = valor
         except ValueError:
